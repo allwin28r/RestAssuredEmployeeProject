@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [rest assured test]">
+  <listeners>
+    <listener class-name="com.employee.utilities.Listeners"/>
+  </listeners>
+  <test thread-count="2" name="TEST employee(failed)">
+    <classes>
+      <class name="com.employees.testcase.TC003_PostNewEmployee">
+        <methods>
+          <include name="validateStatuscodeerr"/>
+          <include name="createEmp"/>
+          <include name="setup"/>
+          <include name="validateStatuscodeerro"/>
+        </methods>
+      </class> <!-- com.employees.testcase.TC003_PostNewEmployee -->
+      <class name="com.employees.testcase.TC002_GETspecificemployee">
+        <methods>
+          <include name="endCase"/>
+          <include name="getuserempidData"/>
+          <include name="validateEmpid"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.employees.testcase.TC002_GETspecificemployee -->
+    </classes>
+  </test> <!-- TEST employee(failed) -->
+</suite> <!-- Failed suite [rest assured test] -->

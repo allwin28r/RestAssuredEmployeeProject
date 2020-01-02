@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="rest assured test" thread-count="2">
+<listeners>
+<listener class-name="com.employee.utilities.Listeners" />
+</listeners>
+<test  name="TEST employee">
+<classes>
+<class name="com.employees.testcase.TC001_GETallemployees"/>
+<class name="com.employees.testcase.TC003_PostNewEmployee"/>
+<class name="com.employees.testcase.TC002_GETspecificemployee"/>
+
+</classes>
+
+</test>
+</suite>
